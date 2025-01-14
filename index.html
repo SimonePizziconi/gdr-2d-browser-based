@@ -3,28 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GDR </title>
+    <title>GDR</title>
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-
     <!-- Corpo Della Pagina -->
     <main>
       <!-- Titolo del gioco -->
       <section>
-        <h1>Titolo</h1>
-        <button>GIOCA</button>
+        <h1>Titolo del Gioco</h1>
+        <button id="startGameButton">GIOCA</button>
       </section>
+
+      <!-- Modale con la selezione del giocatore -->
+      <div class="modal" id="modal">
+        <div class="overlay"></div>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Digita il tuo nome..."
+            aria-label="Nome del giocatore"
+          />
+          <div class="select-player">
+            <div class="col">
+              <img src="Tiles/tile_0097.png" alt="Mago" />
+            </div>
+            <div class="col">
+              <img src="Tiles/tile_0084.png" alt="Guerriero" />
+            </div>
+            <div class="col">
+              <img src="Tiles/tile_0087.png" alt="Arciere" />
+            </div>
+          </div>
+          <button type="submit">Seleziona il Personaggio</button>
+        </form>
+      </div>
     </main>
 
     <!-- Coda Della Pagina -->
     <footer>
-        <ul>
-          <li><a href="#">Regole del gioco</a></li>
-          <li><a href="#">Crediti</a></li>
-          <li><a href="#">Linkedin</a></li>
-          <li><a href="#">GITHUB</a></li>
-        </ul>
+      <ul>
+        <li><a href="#">Regole del gioco</a></li>
+        <li><a href="#">Crediti</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">GitHub</a></li>
+      </ul>
     </footer>
+    <script src="script/main.js"></script>
   </body>
 </html>
