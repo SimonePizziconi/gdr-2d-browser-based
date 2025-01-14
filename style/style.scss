@@ -8,6 +8,18 @@ body {
   color: #fff;
 }
 
+// REGOLE OVERLAY
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Sfondo semitrasparente */
+  display: none; /* Inizialmente nascosto */
+  z-index: 998;
+}
+
 /* REGOLE FOOTER */
 footer {
   height: 50px;
@@ -51,9 +63,8 @@ main {
   display: none;
   position: absolute;
   z-index: 999;
-  /* DEBUG */
+  padding: 20px;
   background-color: rgba(255, 255, 255);
-  height: 200px;
 
   .select-player {
     width: 100%;
@@ -63,7 +74,6 @@ main {
     gap: 10px;
 
     .col {
-      border: 1px solid black;
       width: calc(100% / 3 - 10px);
 
       img {
